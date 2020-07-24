@@ -1,0 +1,425 @@
+body {
+    position: relative;
+    min-height: 1000px;
+    width: 100%;
+    height: 100%; 
+    padding: 0;
+    margin: 0;
+    color:blacks;
+    top: 60px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+
+     /* The image used */
+    background-image:url("../images/meds.jpg");
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    background-position: center; /* Center the image */
+    background-attachment: fixed;
+    padding-bottom: 0;
+    padding-top: 0;
+    background-color:transparent; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+   
+   
+    
+}
+
+html {
+    height: 100%;
+    overflow-x: hidden;
+	position:relative;
+}
+
+img {
+    border: 0;
+    outline: none;
+    vertical-align: top;
+    max-width: 100%;
+}
+.navbar{
+    overflow: hidden;
+    background-color:transparent;
+    position:fixed;
+    top:0;
+    z-index: 1;
+    width: 100%;
+}
+
+body.navbar-nav{
+    overflow: hidden;
+    background-color:transparent;
+    color: #000;
+    position: initial;
+    top: 0;
+    width: auto;
+}
+
+intro.block1{
+    align-content: center;
+    top:50px;
+}
+
+
+
+/*section*/
+#intro {
+    background-image: url("../images/covid.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 0;
+    padding-top: 0;
+    z-index: 1;
+    font-size: 14px;
+}
+#intro .descr{
+    font-size: 22px;
+    line-height: 33px;
+    padding-top: 35px;
+    padding-bottom: 34px;
+}
+#intro a.button{
+    margin-bottom: 190px;  
+}
+section#intro h3 {
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 8px;
+    padding-top: 202px;
+}
+#intro .title{
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 52px;
+    padding-top: 17px;
+    padding-bottom: 0;
+}
+#intro .descr h5 {
+    font-size: 22px;
+    line-height: 33px;
+}
+#intro h1 {    
+    font-size: 63px;
+    font-weight: 400;
+    line-height: 1.26;
+    padding-bottom: 7px;
+    margin: 0;
+}
+section#intro .contact-cont form#contactForm button {
+    margin-bottom: 30px;
+    margin-top: 16px;
+    width: 100%;
+    display: block;
+    border-radius: 2px;
+}
+section#intro .contact-cont{
+    font-family: 'Roboto', sans-serif;
+    padding: 0 30px;
+    margin: 63px 0;
+    margin-bottom: 122px;
+}
+section#intro .contact-cont .form-group input {
+    padding: 0 29px;
+    height: 50px;
+}
+section#intro .contact-cont textarea.form-control{
+    height: 114px;
+    padding: 11px 28px;
+}
+section#intro i.fa.fa-clock{
+    padding-right: 10px;
+}
+
+/*section*/
+section#choose_us {    
+    background:whitesmoke;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+section#choose_us .section_title {
+    padding-top: 125px;
+}
+#choose_us .box_icon-item{
+    padding: 59px 34px 55px;    
+    -webkit-box-shadow: 0px 0px 21px 0px rgba(28,30,35,0.13);
+    -moz-box-shadow: 0px 0px 21px 0px rgba(28,30,35,0.13);
+    box-shadow: 0px 0px 21px 0px rgba(28,30,35,0.13);
+}
+
+
+.call_to_action h2.section_title,
+.call_to_action2 h2.section_title{
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    line-height: 1.24;
+}
+.call_to_action2 {
+    background-image: url("../images/health.jpg");
+    padding: 170px 0 173px;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*section*/
+section.module_price_table .section_title {
+    padding-bottom: 52px;
+}
+section.module_price_table{    
+    background:transparent;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.price_table_wrapper {
+    padding: 40px 15px 40px;
+    -webkit-box-shadow: 0px 0px 27px 4px rgba(39, 40, 44, 0.13);
+    -moz-box-shadow: 0px 0px 27px 4px rgba(39, 40, 44, 0.13);
+    box-shadow: 0px 0px 27px 4px rgba(39, 40, 44, 0.13);
+}
+.price_item_cost span{
+    display: inline-block;
+}
+.price_item .price_item_cost{
+    font-family: 'Roboto', sans-serif;
+}
+.price_item .price_value {
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 1;
+}
+.price_item  .price_item_cost{
+    padding-bottom: 0;
+}
+.price_item .price_item_prefix {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 30px;
+    margin-top: 0;
+    font-weight: bold;
+    line-height: 1;
+}
+.price_item .price_item_body {
+    padding-top: 7px;
+}
+.price_item .price_item_suffix{
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    font-weight: bold;
+    line-height: 1;
+}
+.price_table_wrapper .price_item_title h5 {
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: bold;
+    padding-top: 17px;
+    margin-bottom: 12px;
+}
+.price_table_wrapper .price_item_title .section_subtitle {
+    padding-bottom: 17px;
+}
+.price_item_body .price_item_text h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.6;
+    padding: 6px 0;
+}
+.price_item_body .price_item_btn .button {
+    padding: 7px 29px;
+    margin-top: 27px;
+    margin-bottom: 0;
+}
+.price_table_wrapper.most_popular{
+    padding: 75px 15px 75px;
+    margin-top: -35px;
+}
+
+
+
+
+/* Video popup */
+.video-block_height{
+    height: 576px;
+}
+.section-wrap.video-block {
+    background-image: url("../images/hutano.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.section-wrap.video-block .video:before {
+    width: 0;
+    height: 0;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    border-style: solid;
+    border-width: 27px;
+    z-index: 5;
+    margin: 0;
+    border-radius: 50%;
+    content: '';
+    transition: all 400ms;
+    -webkit-transition: all 400ms;
+    transform: translate(-50%,-50%) scale(1);
+    -webkit-transform: translate(-50%,-50%) scale(1);
+}
+.section-wrap.video-block .video{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    margin-top: 40px;
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    opacity: 1;
+    background: none;
+    -webkit-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+.section-wrap.video-block .video {
+    position: relative;
+    width: 74px;
+    height: 74px;
+    border: none;
+    box-shadow: 0 0 0 0 rgba(238, 8, 8, 0.1);
+    border-radius: 50%;
+    background-color: green;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 1px solid;
+    -webkit-animation: pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 0.5);
+    -moz-animation: pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 0.5);
+    -ms-animation: pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 0.5);
+    animation: pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 0.5);
+}
+.section-wrap.video-block .video:hover{
+  -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
+}
+
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+
+.section-wrap.video-block .video:after {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    display: block;
+    opacity: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 0 7px 12px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    margin-left: 2px;
+}
+.video_frame {
+    width: 100%;
+    border: none;
+    display: block;
+}
+.section-wrap.video-block .video_content {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+}
+.section-wrap.video-block .video_content h2{
+    font-size: 45px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    line-height: 1.38;
+}
+.section-wrap.video-block .video_content p {
+    font-size: 18px;
+    letter-spacing: 0.2px;
+}
+
+
+
+
+
+
+
+body{
+    color: black;
+}
+h1,h2,h3,h4,h5,h6,a{
+    color:black;
+}
+::-webkit-selection,
+::-moz-selection,
+::selection{
+    background: transparent;
+    color: #ffffff;
+}
+a:hover,
+a:focus,
+.top_nav-panel i,
+.top_nav-panel .info-inline a,
+section#intro strong,
+section#intro i.fa.fa-clock,
+.price_item .price_item_cost{
+    color:#2196f3;
+}
+.color-white *,
+.button:focus,
+.section-wrap.app *,
+.section-wrap.video-block .video_content *,
+.section-wrap.video-block .video:before,
+.call_to_action h2.section_title,
+.call_to_action2 h2.section_title{
+    color:black;
+}
+.is-sticky .navbar.navbar-theme {
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3);
+}
+
+.section-wrap.video-block .video:after {
+    border-left-color:red;
+}
+.section-wrap.video-block .video:hover:after{
+    border-left-color: #ffffff;
+}
+.button,
+section.how_it_work a.button:hover,
+.section-wrap.video-block .video:hover:before,
+.price_item_body .price_item_btn .button,
+.price_item_body .price_item_btn .button.alt:hover{
+    border-color: green;
+    color:black;
+    background-color:#2196f3;
+}

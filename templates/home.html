@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} home {% endblock %}
+{% block pagename %} ASTRO-PHARMACY {% endblock %}
+{% block body %}
+
+
+       <section id="intro" class="section-wrap intro-section text-left">
+           <!--Slider-->
+           <div class="container">
+               <div class="row">
+                   <div class="col-xs-12 col-sm-7 col-md-8 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                       <h3>For your health and well being </h3>
+                       <h1 class="section_title">
+                           <a href="{% url 'contact' %}"><strong>Visit Us Today</strong> <br></a>
+                        </h1>
+
+                   </div>
+                   <div class="col-xs-12 col-sm-5 col-md-4 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+                        <div class="contact-cont">
+
+                            <div class="title"><strong>Request</strong> a Free Online Prescription</div>
+                            <ul class="messages">
+                                {% for msg in messages %}
+                                    <li>
+                                        <div class="alert alert-{{msg.level_tag}}" role="alert">
+                                            {{msg.message}}
+                                        </div>
+                                    </li>
+                                {% endfor %}
+                        </ul>
+                             <form action="{% url 'prescription' %}" method="post">
+                                 {% csrf_token %}
+                                    <div class="form-group">
+                                            <label>Name</label>
+                                            {{form.name}}
+                                    </div>
+
+                                    <div class="form-group">
+                                            <label>Surname</label>
+                                            {{form.surname}}
+                                    </div>
+
+                                    <div class="form-group">
+
+                                      <label>Email address</label>
+
+                                      {{form.email}}
+
+                                    </div>
+
+                                    <div class="form-group">
+                                      <label>Symptoms</label>
+                                      {{form.description}}
+                                    </div>
+                                    <button type="submit" class="btn btn-outline-primary">Submit</button>
+                                  </form>
+
+                        </div>
+                    </div>
+                </div>
+
+               </div>
+           </div>
+       </section>
+
+            <section id="choose_us" class="section-wrap">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                                <h2 class="section_title mb35"><strong>Why</strong> Choose Us</h2>
+                                <p>We are one of the leading pharmaceutical companies on the continent with over 270 drug patents, some of
+                                    the most talented minds in the field, cutting edge technology and modern equipment, we are guaranteed
+                                    to provide the continent with high quality drugs and services.
+                                    all our customers and money back guarantee if you are not satisfied with our services.</p>
+                                <a class="btn btn-outline-primary" href="{% url 'contact' %}">Contact Us</a>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 mt30 block_bottom-xs wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+                                        <div class="box_icon-item text-center">
+                                            <div class="img-cont">
+                                                <img src="{% static 'images/icon-11.png' %}" alt="" width="66" height="49">
+                                            </div>
+                                            <h6 class="title"><strong>High Quality</strong></h6>
+                                            <p>Your health and well being is our priority so we never compromise on quality. </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 mt30 block_bottom-xs wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+                                        <div class="box_icon-item text-center">
+                                            <div class="img-cont">
+                                                <img src="{% static 'images/icon-12.png' %}" alt="" width="66" height="49">
+                                            </div>
+                                            <h6 class="title"><strong>Eco-Friendly</strong></h6>
+                                            <p>All our research and production are done using enviromentally friendly procedures.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 mt30 block_bottom-xs wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                                        <div class="box_icon-item text-center">
+                                            <div class="img-cont">
+                                                <img src="{% static 'images/icon-13.png' %}" alt="" width="66" height="49">
+                                            </div>
+                                            <h6 class="title"><strong>Low Cost</strong></h6>
+                                            <p>We provide you the best healthcare services and drugs for affordable prices.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 mt30 block_bottom-xs wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+                                        <div class="box_icon-item text-center">
+                                            <div class="img-cont">
+                                                <img src="{% static 'images/icon-14.png' %}" alt="" width="66" height="49">
+                                            </div>
+                                            <h6 class="title"><strong>Staff Qualification</strong></h6>
+                                            <p>We have the a diversified range of brilliant minds working with and leading our team.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="section-wrap call_to_action2" id="#contact">
+                    <div class="container">
+                        <div class="row text-center ">
+                            <div class="col-md-12 color-white">
+                                <h2 class="section_title">Call Us: +263 719624032</h2>
+                                <h3>OR Email us on astro-pharmaceuticals@astro.com</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+{% endblock %}
+

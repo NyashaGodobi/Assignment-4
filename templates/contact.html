@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}enquiries{% endblock %}
+{% block pagename %}ENQUIRIES{% endblock %}
+{% block body %}
+
+<div class="container">
+
+    <form action="{% url 'query' %}" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label>Name</label>
+            {{form.customer_name}}
+
+        </div>
+        <div class="form-group">
+            <label>Number</label>
+            {{form.number}}
+
+        </div>
+        <ul class="messages">
+        {% for msg in messages %}
+        <li>
+            <div class="alert alert-{{msg.level_tag}}" role="alert">
+                {{msg.message}}
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+        <div class="form-group">
+            <label>Email address</label>
+            {{form.email}}
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+
+
+        <div class="form-group">
+            <label>Enquiry</label>
+            {{form.question}}
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+{% endblock %}

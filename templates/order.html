@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} order {% endblock %}
+{% block pagename %}ORDER{% endblock %}
+{% block body %}
+
+<div class="container">
+    <h3>PLACE YOUR ORDER</h3>
+    <ul class="messages">
+        {% for msg in messages %}
+        <li>
+            <div class="alert alert-{{msg.level_tag}}" role="alert">
+                {{msg.message}}
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    <form action="{% url 'addOrder' %}" method="post">
+        {% csrf_token %}
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Name</label>
+                {{form.buyer_name}}
+            </div>
+
+            <div class="form-group col-md-6">
+                <label>Email</label>
+                {{form.email}}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Address</label>
+            {{form.address}}
+        </div>
+
+        <div class="form-group">
+            <label>Product</label>
+            {{form.product}}
+        </div>
+
+        <div class="form-group">
+            <label>Quantity</label>
+            {{form.quantity}}
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>City</label>
+                {{form.city}}
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Country</label>
+            {{form.country}}
+        </div>
+
+        <div class="form-group">
+            <div class="form-check">
+                {{form.confirmed}}
+                <label class="form-check-label">
+                    Are you sure you want to order?
+                </label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Order</button>
+    </form>
+</div>
+
+
+{% endblock %}

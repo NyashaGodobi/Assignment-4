@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}products{% endblock %}
+{% block pagename %} ASTRO-PRODUCTS {% endblock %}
+{% block body %}
+ <section id="price" class="section-wrap module_price_table">
+            <div class="container">
+                <div class="row text-center ">
+                    <div class="col-md-12 wow flipInX" style="visibility: visible; animation-name: flipInX;">
+                        <h2 class="section_title"><strong>Our</strong> Products & Services</h2>
+                    </div>
+                    <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 mb85 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                        <div class="price_table_wrapper text-center">
+                            <div class="price_item block_bottom-xs">
+                                <div class="price_item_wrapper">
+                                    <div class="price_item_wrap">
+                                        <div class="price_item_head">
+                                            <img src="{% static 'images/anti-ibacterials.png' %}" alt="" width="84" height="84">
+                                            <div class="price_item_title">
+                                                <h5>Anti-biotics</h5>
+                                            </div>
+                                            <div class="price_item_cost">
+                                               <span class="price_item_prefix">$USD</span>
+                                               <span class="price_value">2.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="price_item_body">
+                                            <div class="price_item_text">
+                                                <h6>Highly effective</h6>
+                                            </div>
+                                            <div class="price_item_text">
+                                                <h6>NHS approved</h6>
+                                            </div>
+                                            <div class="price_item_text">
+                                                <h6>10% discount</h6>
+                                            </div>
+                                            <div class="price_item_btn">
+                                                <a class="btn btn-outline-primary" href="{% url 'order' %}">VIEW MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 mb50 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="price_table_wrapper most_popular text-center">
+                            <div class="price_item block_bottom-xs">
+                                <div class="price_item_wrapper">
+                                    <div class="price_item_wrap">
+                                        <div class="price_item_head">
+                                            <img src="{% static 'images/services.png' %}" alt="" width="84" height="84">
+                                            <div class="price_item_title">
+                                                <h5>Services</h5>
+                                            </div>
+
+                                        </div>
+                                        <div class="price_item_body">
+                                            <div class="price_item_text">
+                                                <h6>Prescription drugs supply</h6>
+                                            </div>
+                                            <div class="price_item_text">
+                                                <h6>Research & Development of drugs</h6>
+                                            </div>
+                                            <div class="price_item_text">
+                                                <h6>Clinical trials</h6>
+                                            </div>
+                                            <div class="price_item_text">
+                                                <h6>Private Consulting</h6>
+                                            </div>
+                                            <div class="price_item_btn">
+                                                <a class="btn btn-outline-primary" href="{% url 'order' %}">Request Quotation</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 mb85 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+                        <div class="price_table_wrapper text-center">
+                            <div class="price_item block_bottom-xs">
+                                <div class="price_item_wrapper">
+                                    <div class="price_item_wrap">
+                                        <div class="price_item_head">
+                                            <img src="{% static 'images/sanitizers.png' %}" alt="" width="84" height="84">
+                                            <div class="price_item_title">
+                                                <h5>sanitizers</h5>
+                                            </div>
+                                            <div class="price_item_cost">
+                                               <span class="price_item_prefix">$USD</span>
+                                               <span class="price_value">25.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="price_item_body">
+                                            <div class="price_item_text">
+                                                <h6>Kills 99.9% of germs</h6>
+                                            </div>
+                                            <div class="price_item_text">
+                                                <h6>New and improved formula</h6>
+                                            </div>
+                                            <div class="price_item_text">
+                                                <h6>Comes in various fragrances</h6>
+                                            </div>
+                                            <div class="price_item_btn">
+                                                <a class="btn btn-outline-primary" href="{% url 'order' %}">View More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-wrap video-block">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <div class="video_content">
+                                <div class="row text-center">
+                                    <div class="col-md-6 col-md-offset-3 wow flipInX" style="visibility: visible; animation-name: flipInX;">
+                                        <h2 class="section_title"><strong>The Work</strong> of Our Team</h2>
+                                        <p>Watch our team at work.</p>
+                                    </div>
+                                </div>
+                                <a class="video swipebox-video" href="https://www.youtube.com/watch?v=kTYJKko5HBg" width="1170" height="780" target="_self">
+                                    <div class="video-popup-animation">
+                                        <div style=" -webkit-animation-duration: 2500ms; -moz-animation-duration: 2500ms;-o-animation-duration: 2500ms; animation-duration: 2500ms; color: #ffffff; -webkit-animation-delay: 0ms;-moz-animation-delay: 0ms;-o-animation-delay: 0ms;animation-delay: 0ms;">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="video-block_height"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+{% endblock %}
